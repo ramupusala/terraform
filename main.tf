@@ -5,7 +5,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "server" {
-    count = 4
+    count = 5
   ami           = var.ami # us-east-1
   instance_type = var.ins_typ
   subnet_id = var.subnet
